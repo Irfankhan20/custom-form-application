@@ -3,6 +3,8 @@ import LayOut from "./components/mainLayout/LayOut";
 import Home from "./pages/home/Home";
 import SignIn from "./pages/signIn/SignIn";
 import SignUp from "./pages/signUp/SignUp";
+import AllUsers from "./pages/allUsers/AllUsers";
+import MakeForm from "./pages/makeForm/MakeForm";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +12,7 @@ const router = createBrowserRouter([
     element: <LayOut></LayOut>,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Home></Home>,
       },
       {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/allusers",
+        element: <AllUsers></AllUsers>,
+      },
+      {
+        path: "/makeform",
+        element: <MakeForm></MakeForm>,
       },
     ],
   },
